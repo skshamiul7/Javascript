@@ -1,0 +1,2 @@
+# Javascript
+beginner of javascript
