@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        document.write("Today date and time<br>");
+        var date = new Date();
+
+        var day = date.getDate();
+        var month = date.getMonth()+1;
+        var year = date.getFullYear();
+        document.write("Date: " + day + " /" + month + " /" + year);
+
+        var hour = date.getHours();
+        var munite = date.getMinutes();
+        var second = date.getSeconds();
+        document.write("<br>Time: " + hour + " :" + munite + " :" + second+"<br>");
+
+    
+
+        
+
+    </script>
+</body>
+
+</html>

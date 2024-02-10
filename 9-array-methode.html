@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        document.write("Check console<br>");
+        let name = ["Bangladesh", "pakisthan", "Japan", "India", "Afganstan"];
+
+        console.log("Before shorted "+name);
+        let srtname = name.sort();
+        console.log("Sorted");
+        console.log(srtname);
+        
+
+        name.reverse();
+        console.log("Reverse sorted");
+        console.log(srtname);
+
+        let Numb = [12, 42, 63, 74, 34, 24, 3, 64, 214, 533];
+        let srtnum=Numb.sort(function(a,b){
+            return a-b;
+        });
+
+        console.log(srtnum);
+
+        console.log("REverse shorting");
+        let revnum=Numb.sort(function(a,b){
+            return b-a;
+        });
+        console.log(revnum);
+        
+    </script>
+</body>
+
+</html>

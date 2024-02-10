@@ -1,0 +1,40 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+          <script>
+            var x,y,res;
+
+            num1=parseInt(prompt("Enter x value: "));
+            num2=parseInt(prompt("Enter y value: "));
+
+
+            res=0.5*num1*num2;
+            document.write("Area of triangle is: "+res+ "<br>");
+
+            res=num1*num2;
+            document.write("Area of reactangle is: "+res+ "<br>");
+
+            res= Math.PI*num1*num1;
+            document.write("Area of circle is: "+res.toFixed(2)+ "<br>");
+
+
+            //farenhight to celcious
+            n1=parseFloat(prompt("Enter farenhight value: "));
+
+            res=(n1-32)*5/9;
+            document.write("tempareture in celcious is: "+res.toFixed(2)+ "<br>");
+
+            //celcious to farenhight
+            n1=parseFloat(prompt("Enter celcious value: "));
+
+            res=(n1*9/5)+32;
+            document.write("tempareture in Farenhight is: "+res.toFixed(2)+ "<br>");
+
+
+
+        </script>
+    </body>
+
+</html>

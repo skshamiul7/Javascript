@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function lowestScore(num) {
+            let lowName = num[0][0];
+            let lowNum = num[0][1];
+            for (i = 0; i < num.length; i++) {
+                for (j = 0; j < num.length; j++) {
+                    if (lowNum > num[i][j]) {
+                        lowNum = num[i][j];
+                        lowName = num[i][0];
+                    }
+                }
+            }
+            return lowName;
+        }
+
+        function highestScore(num) {
+            let largeName = num[0][0];
+            let largeNum = num[0][1];
+            for (i = 0; i < num.length; i++) {
+                for (j = 0; j < num.length; j++) {
+                    if (largeNum < num[i][j]) {
+                        largeNum = num[i][j];
+                        largeName = num[i][0];
+                    }
+                }
+            }
+            return largeName;
+        }
+
+        let tarr = [["rakib", 43], ["sakib", 21], ["sakin", 34], ["sk", 98], ["king", 68], ["khan", 56]];
+
+        document.write("Values: " + tarr + "<br>");
+        document.write("Large num is: " + highestScore(tarr));
+        document.write("<br>Lowest num is: " + lowestScore(tarr));
+
+
+
+    </script>
+</body>
+
+</html>

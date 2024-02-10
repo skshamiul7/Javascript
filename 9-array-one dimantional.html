@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function highestScore(num) {
+            let largenum = num[0];
+            for (i = 0; i < num.length; i++) {
+                if (num[i] > largenum)
+                    largenum = num[i];
+            }
+            return largenum;
+        }
+
+        function lowestScore(num) {
+            let smallnum = num[0];
+            for (i = 0; i < num.length; i++) {
+                if (num[i] < smallnum)
+                    smallnum = num[i];
+            }
+            return smallnum;
+        }
+
+        arrNum = parseInt(prompt("Enter how many value u want: "));
+        num = new Array();
+
+        for (i = 0; i < arrNum; i++) {
+            num[i] = parseInt(prompt("Enter values: "));
+        }
+        document.write("Length: " + num.length + "<br>");
+        document.write("Num are: " + num);
+        document.write("<br>Large num is: " + highestScore(num));
+        document.write("<br>Small num is: " + lowestScore(num));
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function add(n1, n2) {
+            res = n1 + n2;
+            return res;
+        }
+        function sub(n1, n2) {
+            res = n1 - n2;
+            return res;
+        }
+        function mul(n1, n2) {
+            res = n1 * n2;
+            return res;
+        }
+        function dev(n1, n2) {
+            res = n1 / n2;
+            return res;
+        }
+        function fin(n1, n2) {
+            res = n1 % n2;
+            return res;
+        }
+
+
+        var inp = prompt("Enter +,-,*,/,% ");
+        switch (inp) {
+            case "+":
+                var num = parseInt(prompt("Enter 1st number : "));
+                var num1 = parseInt(prompt("Enter 2nd number : "));
+                document.write("<br>addition: " + add(num, num1));
+                break;
+
+            case "-":
+                var num = parseInt(prompt("Enter 1st number : "));
+                var num1 = parseInt(prompt("Enter 2nd number : "));
+                document.write("<br>substraction: " + sub(num, num1));
+                break;
+
+            case "*":
+                var num = parseInt(prompt("Enter 1st number : "));
+                var num1 = parseInt(prompt("Enter 2nd number : "));
+                document.write("<br>multipication: " + mul(num, num1));
+                break;
+
+            case "/":
+                var num = parseInt(prompt("Enter 1st number : "));
+                var num1 = parseInt(prompt("Enter 2nd number : "));
+                document.write("<br>divition: " + dev(num, num1));
+                break;
+
+            case "%":
+                var num = parseInt(prompt("Enter 1st number : "));
+                var num1 = parseInt(prompt("Enter 2nd number : "));
+                document.write("<br>finish: " + fin(num, num1));
+                break;
+            default:
+                document.write("Wrong input<br>");
+        }
+
+
+    </script>
+</body>
+
+</html>

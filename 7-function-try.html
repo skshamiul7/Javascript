@@ -1,0 +1,62 @@
+<html>
+
+<body>
+  <script>
+    function def(a, b) {
+      x = a;
+      y = b;
+      sum = x + y;
+      document.write("<br>Sum=" + sum);
+    }
+    function ghi(a, b, c) {
+
+      x = a;
+      y = b;
+      z = c;
+      sum = x + y + z;
+      document.write("<br>Sum=" + sum);
+    }
+    function abc(a, b, c, d) {
+      x = a;
+      y = b;
+      z = c;
+      xx = d;
+      sum = x + y + z + xx;
+      document.write("<br>Sum=" + sum);
+    }
+    var inputs = parseInt(prompt("Enter a number of perameter u want maximum 2 to 4: "));
+    if (inputs == 2) {
+      var num = [];
+      for (var i = 0; i < 2; i++) {
+        num[i] = parseInt(prompt("Enter numbers: "));
+      }
+      document.write("Numbers are: " + num.join("  "));
+
+      def(num[0], num[1]);
+    }
+
+    else if (inputs == 3) {
+      var num = [];
+      for (var i = 0; i < 3; i++) {
+        num[i] = parseInt(prompt("Enter numbers: "));
+      }
+      document.write("Numbers are: " + num.join("  "));
+      ghi(num[0], num[1], num[2]);
+    }
+
+    else if (inputs == 4) {
+      var nums = [];
+      for (var i = 0; i < 4; i++) {
+        nums[i] = parseInt(prompt("Enter numbers: "));
+      }
+      document.write("Numbers are: " + nums.join("  "));
+      abc(nums[0], nums[1], nums[2], nums[3]);
+    }
+
+    else
+      document.write("wront input");
+
+  </script>
+</body>
+
+</html>

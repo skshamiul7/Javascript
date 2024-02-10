@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let name = ["mark", "joker", "sam", "justin", "sara"];
+        let country = ["bangladesh", "india", "pakistan"]
+        let conn = country.concat(name);
+
+        console.log(conn);
+
+        console.log(name);
+        console.log("Length= " + name.length);
+        console.log(name[3]);
+
+        name.push("will smith");
+        name.push("anna maria");
+        console.log(name);
+        name[1] = "hello";
+        console.log(name);
+        name.pop();
+        console.log(name);
+
+        country.shift();
+        console.log(country)
+
+        country.unshift("UNited state")
+        country.unshift("arab amirat")
+        console.log(country)
+
+        delete country[3];
+        console.log(country);
+
+        country.push("germany");
+        console.log(country);
+
+        country.splice(2, 0, "france", "florida");
+        console.log(country);
+
+        na = country.slice(2);
+        console.log(na);
+
+        counShort = country.sort();
+        console.log(counShort);
+
+        
+    </script>
+</body>
+
+</html>

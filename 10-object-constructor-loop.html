@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>
+        J.S
+    </title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    function Mobile(model, name, color, price) {
+        this.model = model;
+        this.name = name;
+        this.color = color;
+        this.price = price;
+
+        this.mobileOutput = function () {
+            document.write("<br>Model: " + this.model);
+            document.write("<br>Name: " + this.name);
+            document.write("<br>Color: " + this.color);
+            document.write("<br>Price: " + this.price);
+        }
+    }
+
+    var input = prompt("Enter how many objects you want as input: ");
+
+    for (var i = 0; i < input; i++) {
+        var model = prompt("Enter model: ");
+        var name = prompt("Enter name: ");
+        var color = prompt("Enter color: ");
+        var price = prompt("Enter price: ");
+
+        var mobile = new Mobile(model, name, color, price);
+        mobile.mobileOutput();
+    }
+
+</script>
+
+
+</html>

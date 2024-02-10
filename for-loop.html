@@ -1,0 +1,47 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+        <script>
+
+            let i;
+            let number=[];
+            let n=parseInt(prompt("Enter how many input u want: "));
+
+            for(i=0; i<n; i++)
+            {
+                number[i]=parseInt(prompt("Enter numbers: "));
+            }
+
+            document.write("Numbers are: ");
+            for(i=0; i<n; i++)
+            {
+                document.write(number[i]+"  ");
+            }
+
+            let large=number[0];
+            let small=number[0];
+
+            for(i=0; i<n; i++)
+            {
+                if(large < number[i])
+                {
+                    large=number[i];
+                    
+                }
+                if(small > number[i])
+                {
+                    small=number[i];
+                    
+                }
+            }
+           document.write("<br>Large num is: "+large);
+           document.write("<br>Small num is: "+small);
+
+
+
+        </script>
+    </body>
+</html>

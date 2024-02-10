@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function Mobile(model, name, color, price) {
+            this.model = model;
+            this.name = name;
+            this.color = color;
+            this.price = price;
+
+            this.mobileOutput = function () {
+                document.write("<br>Brand: " + this.model);
+                document.write("<br>Brand: " + this.name);
+                document.write("<br>Brand: " + this.color);
+                document.write("<br>Brand: " + this.price + "<br>");
+            }
+        }
+
+        mobile1 = new Mobile("Iphone", "iphone  15 pro", "black", "999 $");
+        mobile2 = new Mobile("Google", "pixel 8 pro", "Gray", "699 $");
+        mobile3 = new Mobile("Xiaomi", "note 11", "red", "599 $");
+
+        mobile1.mobileOutput();
+        mobile2.mobileOutput();
+        mobile3.mobileOutput();
+
+
+
+        /*
+                function Mobile(model, name, color, price) {
+                    this.model = model;
+                    this.name = name;
+                    this.color = color;
+                    this.price = price;
+        
+                    this.mobileOutput = function () {
+                        document.write("<br>Brand: " + this.model);
+                        document.write("<br>Brand: " + this.name);
+                        document.write("<br>Brand: " + this.color);
+                        document.write("<br>Brand: " + this.price);
+                    }
+                }
+        
+                mobile1 = new Mobile(
+                    model = prompt("Enter model: "),
+                    name = prompt("Enter name: "),
+                    color = prompt("Enter color: "),
+                    print = prompt("Enter price: ")
+                )
+                mobile1.mobileOutput();
+        
+        */
+    </script>
+</body>
+
+</html>
